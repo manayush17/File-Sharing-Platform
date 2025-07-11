@@ -1,0 +1,11 @@
+# Existing rules
+vscode/client_downloads/
+/files/
+*.pyc
+__pycache__
+.DS_Store
+*.swp
+*.db
+
+# New rule for test file
+testfile.bin

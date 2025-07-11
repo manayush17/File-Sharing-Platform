@@ -1,0 +1,25 @@
+=== INSTRUCTIONS TO CREATE 1.5GB TEST FILE ===
+
+1. For Linux/macOS:
+------------------------------------
+Run this command in terminal:
+dd if=/dev/urandom of=testfile.bin bs=1M count=1500
+
+Verify with:
+ls -lh testfile.bin
+
+2. For Windows (Run as Administrator):
+------------------------------------
+Open Command Prompt and run:
+fsutil file createNew testfile.bin 1610612736
+
+Verify with:
+dir testfile.bin
+
+3. After Testing:
+------------------------------------
+Delete the file to save space:
+- Linux/macOS: rm testfile.bin
+- Windows: del testfile.bin
+
+Note: This file is excluded in .gitignore
